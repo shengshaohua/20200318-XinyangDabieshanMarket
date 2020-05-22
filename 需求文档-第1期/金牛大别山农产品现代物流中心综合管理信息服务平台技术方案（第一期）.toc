@@ -1,0 +1,36 @@
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}项目总体功能概述及建设总路线图}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}市场PC网站功能模块（第一期）}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}首页（市场信息）}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}商户展示}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}商户中心}{4}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}用户登录}{4}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}查看商铺}{4}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}缴纳租金}{4}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}编辑商户信息}{4}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}消息中心}{5}{section.2.4}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}市场公众号建设（第一期）}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}市场信息}{6}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}市场介绍}{6}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}商户信息}{6}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}商户中心}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}我的商铺}{6}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}缴纳租金}{7}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}个人设置}{7}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}消息推送}{8}{section.3.3}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}市场管理后台（第一期）}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}首页}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}商户档案}{9}{section.4.2}%
+\contentsline {section}{\numberline {4.3}商铺档案}{9}{section.4.3}%
+\contentsline {section}{\numberline {4.4}发布通知}{10}{section.4.4}%
+\contentsline {section}{\numberline {4.5}banner图管理}{10}{section.4.5}%
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}项目预期进度}{11}{chapter.5}%
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}项目部署实施}{12}{chapter.6}%
+\contentsline {section}{\numberline {6.1}项目试运行及优化}{12}{section.6.1}%
+\contentsline {section}{\numberline {6.2}软件部署}{12}{section.6.2}%
+\contentsline {section}{\numberline {6.3}市场相关业务人员培训}{13}{section.6.3}%
+\contentsline {section}{\numberline {6.4}运维及售后服务}{13}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}项目运维支持服务}{13}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}项目售后服务}{13}{subsection.6.4.2}%
+\contentsline {paragraph}{}{14}{paragraph*.2}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}第一期所需数据表单及接口}{15}{appendix.A}%
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}项目软硬件技术参数参考}{17}{appendix.B}%

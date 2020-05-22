@@ -1,0 +1,187 @@
+\documentclass[12pt,a4paper,openany]{ctexrep}
+%ctexrep：报告格式，可用chapter，part，默认封面、目录自动分页。
+%ctexbook：书籍格式，同上，奇偶页左右边距不同。
+%ctexart：文章格式，不可用chapter，part，封面，目录同正文同一页。
+
+%===================标题信息
+\def \title {市场综合管理信息服务平台\\\, \\技术方案}
+\def \author {作者}
+\def \department {部门名称}
+\def \custom	{信阳金牛大别山农产品现代物流中心}
+\def \company {郑州闪创网络科技有限公司}
+\def \Ecompany {Zhengzhou Lighting Creative Technology Co.,Ltd}
+
+%===================调用宏集
+\usepackage{lettrine}				%首字下沉
+
+\usepackage{graphicx}				
+
+\usepackage{geometry}		
+
+\usepackage{multirow}				%表格纵向合并
+
+\usepackage{makeidx}				%索引
+\makeindex							%启动索引功能
+
+\usepackage{array}
+
+\usepackage{hyperref}				%引用书签
+
+\usepackage{longtable}			%跨页表单
+
+%===================文档从这里开始
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+\begin{document}	
+
+%===================标题部分
+\thispagestyle{empty}
+\begin{center}
+	\parbox[t][3cm][c]{\textwidth}{\Large
+	\begin{center} {{\custom}} \end{center} }
+	
+	\parbox[t][8cm][c]{\textwidth}{{\fontsize{32pt}{20pt}{
+	\begin{center} {\textbf{\title}}\end{center} }}}
+	
+	\parbox[t][8cm][t]{\textwidth}{
+	\begin{center}  {\large{（第二期）}}\end{center} }
+
+	\parbox[b][2cm][c]{\textwidth}{ {\large
+	\begin{center}
+	\company \\
+	\Ecompany 
+	\end{center}}}
+	
+	\parbox[b][2cm][b]{\textwidth}{
+	\begin{center} {\large\textbf{\number\year \,·\,\number\month}} \end{center} }
+\end{center}
+
+%===================目录部分
+\newpage
+\setcounter{page}{1}
+\pagenumbering{Roman}				%页码以罗马数字计数
+\tableofcontents					%生成目录
+
+%===================正文部分
+%===================章节
+\chapter{项目总体功能概述及建设总路线图}
+%\setcounter{page}{1}				%重置页码（注意位置，要在\chapter行下边
+\pagenumbering{arabic}			%页码以阿拉伯数字表示
+\lettrine[lines=2]{本}\, 方案在原架构方案基础上，结合金牛大别山农产品现代物流中心实际需求紧迫度及建设周期，提出整体平台的功能模块划分，各期建设规划。市场综合管理信息服务平台计划共分六期建设，依次是\textbf{市场及商户管理模块}，\textbf{仓储管理及监控模块}，\textbf{市场交易信息收集模块}，\textbf{市场财务管理系统}，\textbf{市场线上B2B商城}，\textbf{冷链物流管理模块}。\par
+
+\begin{description}
+\item[市场及商户管理模块]主要完成市场的商铺管理，常驻商户信息管理；实现商户线上缴纳租金，费用自动统计及定期生成报表；市场内部通知公告。\par
+\item[仓储管理及监控模块]主要完成市场纯人工平库的数字化货物管理，并将现阶段使用中的自动、半自动化仓库的数据统一进行抽出汇总，在此基础上完成后台对所有类别仓库的信息查看，定向查询。在仓库内设置多点位视频探头及温控探头，并通过数据接口实现管理后台对于仓库的实时监控，实现异常温度自动报警。\par
+\item[市场交易信息收集模块]主要完成市场内交易货物的采样及统计功能。本模块通过商户主动货物申报，车辆扫牌识别，地磅等软硬件联动，并结合仓库出入库货物信息，实现市场内车辆管理、吞吐货物量估算、客流量统计。
+\item[市场财务管理模块]主要完成市场财务相关管理，包括日常记账，账户管理，固定资产管理，期末结转，损益结算，财务报表，报税，银企直联，日常报销等。
+\item[市场线上B2B商城]主要完成市场线上B2B商城建设，通过供、需两方面建立市场上下游供应链，建立线上商品统筹配送，并对接物流企业完成自动发货，逐步开拓线上零售市场。
+\item[冷链物流管理模块]主要完成市场供应链建设过程中的运输，仓储监控功能，配合市场线上商城以及作为市场后续发展方向的冷链物流业务。
+\end{description}
+
+本项目由郑州闪创网络科技有限公司提供全程项目技术研发，软硬件接口对接\footnote{部分已有软硬件设备接口需要市场方提供}以及项目的\hyperref[arrange]{部署实施}，\hyperref[arrange]{员工培训}，技术维护。
+
+本项目第一期已经完成建设的内容表~\ref{1st_s}所示：
+
+\begin{table}[htbp]
+\begin{tabular*}{\hsize}{p{3cm}<{\centering}|p{3cm}<{\centering}|p{8cm}}
+\hline
+模块划分					&	平台				&	\multicolumn{1}{c}{主要功能}		\\
+\hline
+市场前端（第一期）		&	PC网站，公众号		&	市场信息，商户登录，商户信息，缴纳租金，系统通知		\\
+\hline
+市场管理后台（第一期）	&	PC网站				&	商户信息，商铺信息，租金管理，发布通知，缴费信息统计及报表		\\	
+\hline
+\end{tabular*}
+\caption{项目一期建设功能模块}
+\label{function}
+\end{table}
+
+本方案着重介绍第二期建设及实施路线图。第二期建设内容如表~\ref{function}所示：
+
+\begin{table}[htbp]
+\begin{tabular*}{\hsize}{p{3cm}<{\centering}|p{3cm}<{\centering}|p{8cm}}
+\hline
+模块划分					&	平台				&	\multicolumn{1}{c}{主要功能}		\\
+\hline
+市场前端（第一期）		&	PC网站，公众号		&	市场信息，商户登录，商户信息，缴纳租金，系统通知		\\
+\hline
+市场管理后台（第一期）	&	PC网站				&	商户信息，商铺信息，租金管理，发布通知，缴费信息统计及报表		\\	
+\hline
+\end{tabular*}
+\caption{项目一期建设功能模块}
+\label{function}
+\end{table}
+
+通过项目第二期建设，主要解决市场仓储管理的各项问题：
+\begin{itemize}
+\item 一是解决现阶段纯人工平库监管不足，缺乏数据统计的问题；
+\item 二是解决自动化库、半自动化库同人工库的数据整合问题；
+\item 三是为商户提供线上查看仓储，申请仓储服务的功能。
+\item 四是使市场管理者可以线上监控仓库实时情况，线上查看仓库使用情况及吞吐量。
+\end{itemize}
+
+%===================章节
+\chapter{仓储管理系统业务逻辑}
+\lettrine[lines=2]{市}\, 
+\section{}
+
+%===================章节
+\chapter{仓储管理系统业务前端}
+\section{}
+
+%===================章节 
+\chapter{市场PC网站功能（第二期）}
+\section{仓储业务介绍}
+\section{我的仓库}							%查库，费用缴纳
+\section{货物托管申请}
+
+%===================章节
+\chapter{市场公众号建设（第二期）}
+\section{仓储业务介绍}
+\section{我的仓库}
+\section{货物托管申请}
+
+%===================章节
+\chapter{市场管理后台（第二期）}
+\section{仓库监控}							%温度监控，温度预警，库门监控
+\section{库存管理}							%库存查询，
+\section{历史记录}							%出入库记录
+\section{数据报表}							%新增定期在库报表，吞吐量报表，商户使用量报表。
+
+%===================章节
+\chapter{项目预期进度}
+
+\begin{table}[htbp]
+\begin{tabular*}{\hsize}{p{2.5cm}<{\centering}@{-}p{2.5cm}<{\centering}|p{7cm}|p{3cm}}
+\hline
+\multicolumn{2}{c|}{时间节点}		&	进度内容				&	备注	\\
+\hline
+4月27日		&	4月30日		&	项目立案，需求整理，原型设计		&			\\
+5月6日		&	5月10日		&	UI设计								&			\\
+5月11日		&	5月29日		&	技术开发							&			\\
+5月30日		&	5月31日		&	项目测试，试运行					&			\\
+\multicolumn{2}{c|}{6月初}			&	项目交付				&			\\		
+\hline
+\end{tabular*}
+\caption{项目预期建设进度}
+\label{schedule}
+\end{table}
+
+%===================章节
+\chapter{项目部署实施}
+\label{arrange}
+
+%===================附录部分
+\appendix							%附录部分以\appendix开始，后续同正文样式
+
+\chapter{第一期项目建设所需各类数据表单及接口}
+\chapter{项目第一期报价单}
+
+%===================参考文献部分
+%\begin{thebibliography}{*}		%*缺省
+%\bibitem{bib1} sth.,sth.,sth.,sth.
+%\end{thebibliography}
+
+%===================索引部分
+%\printindex						%输出索引，输出前需先进行编译“MakeIndex”
+
+\end{document}
